@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type = "text/javascript"
+         src = "{{ url_for('static', filename = 'hello.js') }}" ></script>
+</head>
+<body>
+    <form action="http://localhost:5000/login" method="POST">
+        <p>SIGN IN :</p>
+        <p>Username: <input type="text" name="username"/></p>
+        <p>Password: <input type="text" name="password"></p>
+        <input type="submit" onclick="sayHello()" value="Submit"/>
+    </form>
+</body>
+</html>
